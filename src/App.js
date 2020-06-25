@@ -8,8 +8,10 @@ import { GlobalProvider } from "./context/GlobalState";
 import "./App.css";
 function App() {
   return (
-    <div>
-      <Header />
+    <GlobalProvider>
+    
+   
+    <Header />
 
       <div className="container">
         <Balance />
@@ -17,8 +19,8 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </div>
-      <GlobalProvider />
-    </div>
+      
+    </GlobalProvider>
   );
 }
 
